@@ -1,0 +1,398 @@
+Html {box-sizing:border-box;}
+*, *::before, *::after {box-sizing:inherit}
+
+.container{
+    width: 1200px;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+h1{
+    font-weight: lighter;
+    font-family: serif;
+    color: rgb(239, 89, 28);
+    font-size: 39px;
+}
+
+hr{
+    width: 160%;
+    margin-left: -50%;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+}
+
+/*header*/
+header{
+    width: 100%;
+}
+
+.header{
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbar{
+    background-color: rgb(235, 235, 235);
+    width: 850px;
+    height: 45px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 35px;
+    font-size: 18px;
+    padding-left: 15px;
+    outline: none;
+}
+
+.searchbar::placeholder{
+    color: rgb(120, 120, 120);
+    font-weight: 300;
+}
+
+.SellOn{
+    font-size: 15px;
+}
+
+.Registar{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.SignIn{
+    height: 38px;
+    width: 65px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 19px;
+}
+
+.cart{
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    color: #555;
+    font-weight: normal;
+}
+
+/* general list in header */
+
+
+.generallist{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.listitems:hover{
+    border-bottom: 1px solid black;
+}
+
+
+
+.listitems{
+    padding: 8px;
+
+}
+
+
+#specificlist{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    padding: 0px;
+}
+.specificlist{
+    margin: 10px;
+    margin-left: 0px;
+    padding:  8px 12px;
+    background-color: rgb(249, 149, 108);
+    border-radius: 20px;
+    height: 34px;
+    line-height: 17px;
+}
+
+.specificlist:hover{
+    background-color: rgb(248, 137, 93);
+}
+
+
+/*header^^^^*/
+
+.body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 5px;
+    width: 100%;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.topmain{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+}
+.topmainleft{
+    display: flex;
+    font-size: 13px;
+}
+
+.whiskey{
+    font-weight: 550;
+}
+.topmainright{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+
+/*products*/
+.product{
+    cursor: pointer;
+    position: relative;
+}
+
+#product img{
+    width: 230px;
+    height: 230px;
+    display: inline-block;
+}
+
+#product img:hover{
+    border: 1.25px solid rgb(200, 200, 200);
+}
+
+#product:hover .heart{
+    display: block;
+}
+
+.product div{
+    margin: 0;
+    width: 230px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.heart{
+    position: absolute;
+    top: 5px;
+    left: 207px;
+    display: none;
+}
+
+.heart a{
+    color:rgb(200, 200, 200);
+}
+
+.title{
+    font-size: 15px;
+}
+
+.views{
+    margin: 0px;
+    font-size: 12px;
+}
+
+.price{
+    margin: 0px;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.stars{
+    height: 20px;
+    background: url(http://i.stack.imgur.com/oZ9Id.png);
+    background-repeat: no-repeat;
+}
+
+.rate{
+    height: 20px;
+    background: url(http://i.stack.imgur.com/oZ9Id.png);
+    background-position: 0px -100px;
+    background-repeat: no-repeat;
+}
+
+
+
+/*side bar*/
+aside{
+    font-size: 13px;
+}
+
+.sections{
+    font-weight: 550;
+    padding: 7px 0px;
+}
+
+.categories{
+    padding: 7px 15px;
+}
+
+.checkbox{
+    padding: 7px 0px;
+}
+
+.checkbox2{
+    padding: 7px 0px;
+}
+
+.checkbox3{
+    padding: 7px 0px;
+}
+
+.checkbox4{
+    padding: 7px 0px;
+}
+
+
+.show >a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: visible;
+}
+
+#plus{
+    font-size: 20px;
+    padding-right: 5px;
+    font-weight: lighter;
+}
+
+.show >a:hover{
+    background-color: rgb(240, 240, 240);
+    width: 110px;
+    height: 35px;
+    border-radius: 35px;
+    margin-right: -500px;
+}
+
+.local{
+    margin: 0px 15px 7px;
+    background-color: transparent;
+    width: 150px;
+    height: 35px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-left: 10px;
+    outline: none;
+}
+
+.local::placeholder{
+    color: rgb(120, 120, 120);
+}
+
+.price2{
+    margin: 0px 15px 7px;
+    background-color: transparent;
+    width: 70px;
+    height: 35px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-left: 10px;
+    outline: none;
+}
+
+.priceto{
+    font-size: 14px;
+}
+
+#price2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: visible;
+}
+
+
+.local2{
+    margin: 7px 0px;
+    background-color: transparent;
+    width: 200px;
+    height: 35px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: lighter;
+}
+
+.categories a:hover {
+    color: rgb(180, 180, 180);
+    text-decoration-line: underline;
+}
+
+.sections a:hover {
+    color: rgb(180, 180, 180);
+    text-decoration-line: underline;
+}
+
+.checkbox a:hover {
+    color: rgb(180, 180, 180);
+    text-decoration-line: underline;
+}
+
+.checkbox2 a:hover {
+    color: rgb(180, 180, 180);
+    text-decoration-line: underline;
+}
+
+.checkbox3 a:hover {
+    color: rgb(180, 180, 180);
+    text-decoration-line: underline;
+}
+
+.checkbox4 a:hover {
+    color: rgb(180, 180, 180);
+    text-decoration-line: underline;
+}
+
+.checkbox5 a:hover {
+    color: rgb(180, 180, 180);
+    text-decoration-line: underline;
+}
+
+
+
+
