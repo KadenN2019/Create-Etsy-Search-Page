@@ -1,7 +1,7 @@
 const html= items.results.map(items=>{
     return `
     <div class="product">
-        <div id=product><a href="${items.url}">
+        <div id=product><a href="${items.url}" target="_blank">
             <img src="${items.Images[0].url_fullxfull}">
             <div class="heart"><a><i class="fa fa-heart"></i></a></div></a>
         </div>
