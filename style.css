@@ -234,16 +234,18 @@ header{
     font-weight: 550;
 }
 
-.stars{
+.product .stars{
+    background-image: url(http://i.stack.imgur.com/oZ9Id.png);
     height: 20px;
-    background: url(http://i.stack.imgur.com/oZ9Id.png);
+    width: 105px;
     background-repeat: no-repeat;
 }
 
-.rate{
-    height: 20px;
-    background: url(http://i.stack.imgur.com/oZ9Id.png);
+.product .stars .rate{
+    background-image: url(http://i.stack.imgur.com/oZ9Id.png);
     background-position: 0px -100px;
+    height: 20px;
+    width: 70%;
     background-repeat: no-repeat;
 }
 
