@@ -1,9 +1,9 @@
 const html= items.results.map(items=>{
     return `
     <div class="product">
-        <div id=product>
+        <div id=product><a href="${items.url}">
             <img src="${items.Images[0].url_fullxfull}">
-            <div class="heart"><a><i class="fa fa-heart"></i></a></div>
+            <div class="heart"><a><i class="fa fa-heart"></i></a></div></a>
         </div>
         <div class="title">${items.title}</div>
         <div class="views">Made by: ${items.who_made}</div>
